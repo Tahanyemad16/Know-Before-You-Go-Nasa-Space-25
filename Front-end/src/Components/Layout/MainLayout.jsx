@@ -23,12 +23,5 @@ function MainLayout({ children }) {
 
 export default MainLayout;
 
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { FaStar, FaEdit, FaDownload } from "react-icons/fa";
 
-import cloudLogo from "../../assets/icon.png";
-import sunImg from "../../assets/2.png";
-import cloudImg from "../../assets/4.png";
-import rainImg from "../../assets/1.png";
 

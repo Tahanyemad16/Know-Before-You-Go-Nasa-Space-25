@@ -216,6 +216,23 @@ export default function Home() {
           <FaSignOutAlt className="text-red-300" size={18} />
         </button>
       </div>
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex sm:hidden gap-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-lg">
+        <button onClick={() => navigate("/profile")} title="Profile" className="w-10 h-10 rounded-full bg-blue-500/10 hover:bg-blue-500/20 flex items-center justify-center transition">
+          <FaUser className="text-blue-300" size={18} />
+        </button>
+        <button onClick={handleAddEvent} title="Add Event" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+          <FaPlus className="text-white" size={18} />
+        </button>
+        <button onClick={handleShowEvents} title="Show Events" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+          <FaList className="text-white" size={18} />
+        </button>
+        <button onClick={handleShowFavorites} title="Favorites" className="w-10 h-10 rounded-full bg-amber-400/10 hover:bg-amber-400/20 flex items-center justify-center transition">
+          <FaStar className="text-yellow-300" size={18} />
+        </button>
+        <button onClick={handleLogout} title="Logout" className="w-10 h-10 rounded-full bg-red-500/10 hover:bg-red-500/20 flex items-center justify-center transition">
+          <FaSignOutAlt className="text-red-300" size={18} />
+        </button>
+      </div>
 
       <div className="mb-8 text-center">
         <img src={cloudLogo} alt="logo" className="h-16 mx-auto mb-3 drop-shadow-lg" />
